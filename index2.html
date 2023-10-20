@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love <3</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="box">
+        <span style="--i:1;"><img src="img/ririn1.jpeg" alt=""></span>
+        <span style="--i:2;"><img src="img/ririn2.jpeg" alt=""></span>
+        <span style="--i:3;"><img src="img/ririn3.jpeg" alt=""></span>
+        <span style="--i:4;"><img src="img/ririn4.jpeg" alt=""></span>
+        <span style="--i:5;"><img src="img/ririn5.jpeg" alt=""></span>
+        <span style="--i:6;"><img src="img/ririn6.jpeg" alt=""></span>
+        <span style="--i:7;"><img src="img/ririn7.jpeg" alt=""></span>
+        <span style="--i:8;"><img src="img/ririn8.jpeg" alt=""></span>
+        <audio id="audioPlayer" autoplay loop>
+            <source src="mylove.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+
+    <script>
+        const playButton = document.getElementById('playButton');
+        const audioPlayer = document.getElementById('audioPlayer');
+
+        playButton.addEventListener('click', () => {
+            audioPlayer.play();
+            playButton.style.display = 'none'; // Hide the button after playing
+        });
+    </script>
+</body>
+</html>
